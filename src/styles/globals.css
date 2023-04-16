@@ -42,11 +42,29 @@ main {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: brown;
+  background:#1D3B61;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: black;
+}
+
+.content {
+  display: none;
+}
+
+.active-content {
+  display: block;
+
+}
+
+
+
+@media only screen and (max-width:500px) {
+  .sidebar {
+ 
+     height:80vh;
+  }
 }
