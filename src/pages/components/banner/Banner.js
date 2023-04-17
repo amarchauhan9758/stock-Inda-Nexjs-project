@@ -1,5 +1,5 @@
 import React from 'react'
-import { companydata } from '../../Data/companydata'
+import { companydata } from '../../../Data/companydata'
 
 function Banner() {
   return (

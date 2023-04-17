@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "../../Data/data"
+import { data } from "../../../Data/data"
 
 
 

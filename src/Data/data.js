@@ -1,3 +1,4 @@
+
  export const data =[{
     "id": 1,
     "img": "https://indiacsr.in/wp-content/uploads/2021/07/companies-in-india.jpg",

@@ -1,3 +1,5 @@
+import React from "react"
+
 export const companydata =[{
     "id": 1,
     "sector":5,

@@ -7,7 +7,7 @@ import RightSection from "../gridSection/RightSection"
 import { BsChatLeft, BsShare } from "react-icons/bs";
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import Avatar from '@mui/material/Avatar';
-import { companydata } from "../../Data/companydata"
+import { companydata } from "../../../Data/companydata"
 
 function HeroSection() {
   return (
