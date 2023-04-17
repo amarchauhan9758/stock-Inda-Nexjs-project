@@ -4,7 +4,6 @@
 
 
 .sidebar {
-  margin-top:4rem;
   position: fixed;
   top: 0;
   left: -250px;
@@ -60,11 +59,20 @@ main {
 
 }
 
+.ul-list {
+  animation-name: marquee;
+  animation-duration: 20s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
 
-
-@media only screen and (max-width:500px) {
-  .sidebar {
- 
-     height:80vh;
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
+
+

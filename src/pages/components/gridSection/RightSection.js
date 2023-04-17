@@ -1,5 +1,5 @@
 import React from "react";
-import { data } from "../Data/data"
+import { data } from "../../Data/data"
 
 
 
@@ -9,7 +9,7 @@ function RightSection({ isOpen }) {
     return (
         <><div className="p-5">
             <div>
-                <h1 className="text-2xl text-center md:text-start font-semibold text-red-400">Market Stories </h1>
+                <h1 className="text-lg text-center md:text-start font-semibold text-red-400  uppercase ">Market Stories </h1>
             </div>
             <div  className={ isOpen == false ? "   mx-auto    grid grid-cols-1   xl:grid-cols-2  gap-5   " : "   grid grid-cols-1    h-[800px] overflow-y-scroll gap-5 "} >
 

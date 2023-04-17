@@ -10,6 +10,8 @@ import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import Avatar from '@mui/material/Avatar';
 import {BiComment , BiBarChartAlt2} from "react-icons/bi"
 import { CiUser } from "react-icons/ci";
+import Header from '../header/Header';
+import Banner from '../banner/Banner';
 
 function SideBar({ activeItem, handleItemClick }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -49,16 +51,16 @@ function SideBar({ activeItem, handleItemClick }) {
             <ul>
               <li className=" text-lg ">
 
-              <button onClick={() => handleItemClick(1)} className={activeItem === 1 ? " bg-[#061d3a]  p-3 " : "bg-[#1D3B61]   "}  >  <span className="flex items-center gap-1"><BiComment/> Discussion Forum </span> </button>
+              <button onClick={() =>{ handleItemClick(1) ; handleToggle() }} className={activeItem === 1 ? " bg-[#061d3a]  p-3 " : "bg-[#1D3B61]   "}  >  <span className="flex items-center gap-1"><BiComment/> Discussion Forum </span> </button>
               </li>
               <li className=" text-lg ">
 
-              <button onClick={() => handleItemClick(2)} className={activeItem === 2 ? " bg-[#061d3a]  p-3 " : "bg-[#1D3B61]   "}  >  <span className="flex items-center gap-1"><BiBarChartAlt2/> Market Stories</span> </button>
+              <button onClick={() =>{ handleItemClick(2) ; handleToggle()}} className={activeItem === 2 ? " bg-[#061d3a]  p-3 " : "bg-[#1D3B61]   "}  >  <span className="flex items-center gap-1"><BiBarChartAlt2/> Market Stories</span> </button>
               </li>
               <li className=" text-lg ">
 
                 <button className='mx-auto py-2 '></button>
-              <button onClick={() => handleItemClick(3)} className={activeItem === 3 ? " bg-[#061d3a]  p-3 " : "bg-[#1D3B61]   "}  >  <span className="flex items-center gap-1"><BiComment/>     Senitment            </span> </button>
+              <button onClick={() =>{ handleItemClick(3); handleToggle()}} className={activeItem === 3 ? " bg-[#061d3a]  p-3 " : "bg-[#1D3B61]   "}  >  <span className="flex items-center gap-1"><BiComment/>     Senitment            </span> </button>
               </li>
               <li className=" text-lg ">
 
@@ -81,14 +83,17 @@ function SideBar({ activeItem, handleItemClick }) {
         </div>
 
         <main className=' flex justify-start items-start w-[100%] ' ref={mainRef}>
-          <div className="w-[5%]   flex  items-center  h-screen  ">
+
+          <div className="w-[5%]   flex  items-center lg:items-start  h-screen  ">
             <button className=' py-5 border rounded bg-[#1D3B61] text-white' onClick={handleToggle} >{isOpen ? <AiOutlineCaretLeft /> : <AiOutlineCaretRight />} </button>
           </div>
-
+  {/* for mobile view and tablets */}
           <div className="w-full  block lg:hidden  ">
+          <Header/>
+        <Banner/>
             <div className="   flex justify-center items-center gap-12 text-white font-semibold ">
 
-              <button onClick={() => handleItemClick(1)} className={activeItem === 1 ? "border-b-4 border-red-400 bg-[#1D3B61]  px-5 " : "bg-[#1D3B61]   px-5"} >DisscussionFrom </button>
+              <button onClick={() => handleItemClick(1)} className={activeItem === 1 ? "border-b-4 border-red-400 bg-[#1D3B61]  px-5 " : "bg-[#1D3B61]   px-5"} >Disscussion Fourm </button>
               <button onClick={() => handleItemClick(2)} className={activeItem === 2 ? "border-b-4 border-red-400 bg-[#1D3B61]  px-5 " : "bg-[#1D3B61]  px-5"}>Market Stories </button>
 
 

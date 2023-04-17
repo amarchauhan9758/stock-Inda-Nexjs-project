@@ -15,7 +15,7 @@ function Header() {
               <Image src="https://www.goindiastocks.com/Content/assets/images/logewithname.png" alt="logo" width={80} height={80} />
             </div>
             <div className=" lg:w-[50%] border  rounded-md shadow-md bg-blue-500 justify-center flex items-center">
-              <input className=' w-full py-2 px-2 bg-gray-100' type="text" placeholder='Enter The Stocks' />
+              <input className=' w-full py-2 px-2 bg-gray-100' type="text" placeholder='Enter Stock Here' />
               <span className='p-2'> <AiOutlineSearch className='text-white  ' /></span>
             </div>
             <div className='hidden lg:block  mx-auto '>

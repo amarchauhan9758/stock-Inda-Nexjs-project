@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import BottomNavigation from '@/pages/components/bottom-navigation/BottomNavigation'
 import Header from '@/pages/components/header/Header'
 import Sidebar from '@/pages/components/sidebar/SideBar'
+import Banner from '@/pages/components/banner/Banner';
 
 
 function HomePages() {
@@ -15,7 +16,11 @@ function HomePages() {
 
   return (
     <div className='overflow-hidden'>
-        <Header  activeItem={activeItem} />
+
+    <div className=" hidden lg:block" >
+        <Header   activeItem={activeItem} />
+        <Banner/>
+    </div>
         <Sidebar  activeItem={activeItem}  handleItemClick={handleItemClick} />
         <BottomNavigation/>
 

@@ -7,7 +7,7 @@ import RightSection from "../gridSection/RightSection"
 import { BsChatLeft, BsShare } from "react-icons/bs";
 import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
 import Avatar from '@mui/material/Avatar';
-import { companydata } from "../Data/companydata"
+import { companydata } from "../../Data/companydata"
 
 function HeroSection() {
   return (
@@ -15,11 +15,11 @@ function HeroSection() {
       <div className=" overflow-hidden">
         <div className=' p-5'>
           <div>
-            <h1 className="text-2xl md:text-start text-center font-semibold text-red-400"  >Disscussion Fourm </h1>
+            <h1 className="text-lg md:text-start text-center font-semibold text-red-400 uppercase"  >Disscussion Fourm </h1>
           </div>
           <div>
             <h1 className=" md:text-start text-center  font-semibold mb-2 ">Filters</h1>
-            <div className="bg-white shadow-md  mx-auto  shadow-black rounded-lg p-4 md:p-8">
+            <div className="bg-white shadow-md  mx-auto   rounded-lg p-4 md:p-8">
               <div className="flex flex-wrap gap-5 justify-center ">
                 <button className="bg-red-600 text-white px-8 py-2 rounded-full font-semibold hover:bg-red-800 hover:text-cyan-200  " >Sector 1</button>
                 <button className="bg-blue-600 text-white px-8 py-2 rounded-full font-semibold hover:bg-blue-800 hover:text-cyan-200  " >Sector 1</button>
@@ -36,7 +36,7 @@ function HeroSection() {
                 companydata.map((item) => {
                   return (
 
-                    <div className=" mb-5 p-5 shadow-md shadow-black rounded-lg">
+                    <div className=" mb-5 p-5 shadow-md  rounded-lg">
                       <h1 className="text-end text-blue-500 font-semibold " >2 min ago</h1>
                       <div className="relative  mx-auto  " >
                         <img className=" mx-auto " src={item.img} alt="InfiBeam" width="210px" height="92px" />
