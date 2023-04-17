@@ -1,4 +1,4 @@
-# Stock Inidia
+# Stock India
 Getting Started with Create Next App
 This project was tailwind css with Create next App.
 
